@@ -1,2 +1,2 @@
-# python23_march
-all codes are available here on daily basis!!
+# Hello chat,
+all codes are available here on daily basis for lifetime!!
