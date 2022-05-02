@@ -1,0 +1,71 @@
+Write a Python program to calculate the length of a string.
+
+Write a Python program which accepts the radius of a circle from
+ the user and compute the area.
+
+Write a Python program which accepts the user's first and last 
+name and print them in reverse order with a space between them.
+
+Write a Python program to get the volume of a sphere with radius 6.
+
+Write a Python program to get the difference between a given 
+number and 17, if the number is greater than 17 return the difference else print -1.
+
+Write a Python program to calculate the sum of three given numbers, 
+if the values are equal then return three times of their sum.
+
+Write a Python program to find whether a given number 
+(accept from the user) is even or odd, print out an appropriate
+ message to the user.
+
+Write a Python program to test whether a passed 
+letter is a vowel or not.
+
+Write a Python program that will accept the base and height of a triangle 
+and compute the area.
+
+Write a Python program to sum of three given integers. 
+However, if two values are equal sum will be zero.
+ 
+Write a Python program to sum of two given integers. 
+However, if the sum is between 15 to 20 it will return 20.
+
+Write a Python program that will return true if the two given integer 
+values are equal or their sum or difference is 5.
+
+ Write a Python program to display your details like name, age, 
+address in three different lines. 
+
+Write a Python program to solve (x + y) * (x + y).
+Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years.
+Test Data : amt = 10000, int = 3.5, years = 7
+Expected Output : 12722.79
+
+Write a Python program to find those numbers which are
+ divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
+
+Write a Python program to convert temperatures to and from celsius, fahrenheit.
+[ Formula : c/5 = f-32/9 [ where c = temperature in celsius and f = temperature
+ in fahrenheit ]
+Expected Output :
+60°C is 140 in Fahrenheit
+45°F is 7 in Celsius
+
+Write a Python program to guess a number between 1 to 9.
+Note : User is prompted to enter a guess. If the user guesses wrong then
+ the prompt appears again until the guess is correct, on successful guess,
+ user will get a "Well guessed!" message, and the program will exit.
+
+Write a Python program which iterates the integers from 1 to 50. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+Sample Output :
+fizzbuzz
+1
+2
+fizz
+4
+buzz
+
+
+
+
+
