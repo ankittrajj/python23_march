@@ -1,0 +1,89 @@
+# connection
+
+import mysql.connector as c
+con = c.connect(host = 'localhost',
+                user = 'root',
+                passwd = 'Ankit@8285',
+                database = 'hdfcbank' )
+
+cursor = con.cursor()
+
+# create a menu
+# 1 open acc
+# 2 cash depo
+# 3 cash withdrwal
+# 4. Acc details
+# 5.Exit
+while True:
+    print('********** Welcome To Bank Management System!!********* ')
+
+    choice = input("1.Open Account\n2.Cash Deposit\n3.Cash Withdrawl\n4.Account Details\n5 Exit")
+
+
+    # code for open account---->
+    # name
+    # age
+    # contact
+    # print("Account open successfully!!)
+
+    if choice == '1':
+        name = input("Enter the name")
+        age = int(input("enter the age"))
+        mobile = int(input("Enter the phone number"))
+        query = "Insert into cust2 values('{}',{},{})".format(name,age,mobile)
+        cursor.execute(query)
+        con.commit()
+
+        print("Account Open Successfully")
+
+    # cash deposit
+
+    # name
+    # deposit amount
+    # print(amount deposited!!)
+
+    # try to write the code for the next options.
+
+    elif choice == '2':
+        name = input("Enter the name")
+        deposit_amt = int(input("enter the amt to deposit"))
+        acc_num =  int(input("enter the account number"))
+
+        query = "Insert into cust2 values('{}',{},{})".format(name,deposit_amt,acc_num)
+
+        cursor.execute(query)
+        con.commit()
+        print("Amount Deposited!!")
+
+
+    # name
+    # withdrawl
+    # acc_num
+
+    elif choice == '3':
+        name = input("Enter the name")
+        acc_num =  int(input("enter the account number"))
+        withdrawl =  int(input("enter the amt to withdrawl"))
+
+        query = "Update cust2 set withdrawl = {} where name = '{}'".format(withdrawl,name)
+        cursor.execute(query)
+        con.commit()
+        print("Amount Withdrawl")
+
+    # 4---> account details
+    # try to fetch data from database
+    elif choice == '4':
+        query = 'Select * from cust2'
+        cursor.execute(query)
+
+        acc_details = cursor.fetchall()
+        print(acc_details)
+        con.commit()
+
+    # write a code to exit the project!!
+    elif choice == '5':
+        break;
+
+
+# add some features -----> after deposit cash your acc will update.
+# make one more option for acc details.
